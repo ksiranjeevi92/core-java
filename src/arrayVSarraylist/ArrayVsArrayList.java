@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class ArrayVsArrayList {
     public static void main(String[] args) {
         String[] friendsArray = new String[4];
+
         String[] friendsArray2 = {"John", "Cena", "Micheal"};
 
         ArrayList<String> friendsArrayList = new ArrayList<>();
