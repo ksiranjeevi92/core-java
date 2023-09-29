@@ -3,7 +3,7 @@ package stringhandling;
 public class StringPoolDemo {
     public static void main(String[] args) {
         Immutable user1  = new Immutable(12,"u");
-        Immutable user2  = new Immutable(13,"u");
+        Immutable user2  = new Immutable(12,"u");
 
         System.out.println(user1);
         System.out.println(user2);
@@ -21,6 +21,9 @@ public class StringPoolDemo {
         System.out.println(s1 == s3);
 
         System.out.println(s1.equals(s2));
+
+        System.out.println(user1 == user2);
+        System.out.println(user1.equals(user2));
 
     }
 }

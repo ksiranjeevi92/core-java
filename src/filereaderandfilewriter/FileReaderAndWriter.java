@@ -26,7 +26,11 @@ public class FileReaderAndWriter {
     public static void read(){
         try{
             BufferedReader reader = new BufferedReader(new FileReader("example.txt"));
-
+            int i;
+            System.out.println(reader.readLine());
+            while ((i = reader.read()) != -1){
+                System.out.println((char)i);
+            }
         }catch (IOException ex){
             System.out.println(ex.getMessage());
         }
